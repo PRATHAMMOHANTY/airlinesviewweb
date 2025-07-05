@@ -31,6 +31,28 @@ A data-driven web application that visualizes real-time flight data using the Av
 
 ```bash
 git clone https://github.com/your-username/airline-demand-webapp.git
-cd airline-demand-webapp
+cd airline-demand-webapp 
+
+```
+### Setup Environment
+- Create a .env file:
+
+- `touch` .env
+  
+### Add the following to .env:
+- OPENAI_API_KEY=your_openai_key
+- GROQ_API_KEY=your_groq_key
+
+### Install Dependencies
+- `pip` install -r requirements.txt
 
 
+### Run the App
+- python app.py
+- Visit http://localhost:5000 in your browser.
+
+### Docker Setup
+- To build and run locally with Docker:
+
+- docker build -t airline-demand-webapp .
+- docker run -p 5000:5000 airline-demand-webapp
